@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!------------------ social icon style ------------------>
+<style>
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-github{
+  background: #ff6600;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+<!------------------- contant style ---------------------------> 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+    </style>
+</head>
+
+<body style="background-color: Lavender">
+
+
+         <!--------------------------------- Navbar (placed at the bottom of the header image) ------------------------------------------->
+        <div style="background-color:blue; text-height:30px; margin:0px; padding-top:10px; padding-bottom:10px " >
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="blog-page.html" class="w3-bar-item w3-button">Blog</a>
+            <a href="Portfolio-final.html" class="w3-bar-item w3-button">Portfolio</a>
+            <a href="contact-us.html" class="w3-bar-item w3-button">Contact</a>
+            <a href="register.php" class="w3-bar-item w3-button">Join Us</a>
+            <a href="#active" class="w3-bar-item w3-button">Founders</a>
+            <a href="logout.php" class="w3-bar-item w3-button">Logout</a>
+
+            <!-- Add font awesome icons -->
+            <a style="float:right; font-size: 30px" href="https://www.youtube.com/channel/UC9g1tQMPK8UV20ihXq2bqvw" class="fa fa-youtube"></a> 
+            <a  style="float:right; font-size: 30px" href="https://www.instagram.com/darshanrao526/" class="fa fa-instagram"></a>
+            <a style="float:right; font-size: 30px" href="https://twitter.com/Darshan57925998" class="fa fa-twitter"></a>
+            <a style="float:right; font-size: 30px" href="https://www.facebook.com/profile.php?id=100058283611682" class="fa fa-facebook"></a>
+            <a style="float:right; font-size: 30px" href="https://www.linkedin.com/in/darshan-yadav-9496b0201/" class="fa fa-linkedin"></a>
+            <a style="float:right; font-size: 30px" href="https://github.com/Darshan-star" class="fa fa-github"></a>
+            
+        </div>
+
+
+<!------------------------ founder Detail ----------------------------->
+    <br><br>
+    <center>
+        <h1 style="font-family: Cursive; background-color: LightBlue; Color: White; font-size: 25px; margin-right:70px; margin-left:70px ">Founders of Introvert Travels Blog
+        </h1>
+
+    </center>
+ 
+
+  
+ <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="pradeep.jpeg" alt="Pradeep" style="width:100%">
+      <div class="container">
+        <h2>Pradeep Bhagat</h2>
+        <p class="title">Creator</p>
+        <p>Hi, Thanks for joining us. I am Created Backend of this website.</p>
+        <p>pradeepbhagatpb4@gmail.com</p>
+        <form name="myForm1" action="https://www.instagram.com/_kunnaldayaroy/" onsubmit="return validateForm1()" method="post">
+        <button class="button">Contact on facebook</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Kunal roy.jpg" alt="Kunal" style="width:100%">
+      <div class="container">
+        <h2>Kunal Roy</h2>
+        <p class="title">Creator</p>
+        <p>Hi, Thanks for joining us. I am Created the frontend of this website.</p>
+        <p>Kunalroy@gmail.com</p>
+        <form name="myForm2" action="https://www.instagram.com/_kunnaldayaroy/" onsubmit="return validateForm2()" method="post">
+        <button class="button">Contact on instagram</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="Darshan.jpg" alt="Darshan" width="434" height="433">
+      <div class="container">
+        <h2>Darshan Yadav</h2>
+        <p class="title">Editor</p>
+        <p>Hi, Thanks for joining us. I make changes and publish this website.</p>
+        <p>darshanrao526@gmail.com</p>
+        <form name="myForm3" action="https://www.instagram.com/darshanrao526/" onsubmit="return validateForm3()" method="post">
+        <button class="button">Contact on Linked In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+</body>
+
+</html>

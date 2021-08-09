@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <style>
+
+<!---------------- style for navigation bar -------------------->
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 3px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-github{
+  background: #ff6600;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+<!-------------------- style for contact form ------------------------->
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        .container {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        
+        .column {
+            float: left;
+            width: 50%;
+            margin-top: 6px;
+            padding: 20px;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .column,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+         <!--------------------------------- Navbar (placed at the bottom of the header image) ------------------------------------------->
+        <div style="background-color:blue; text-height:30px; margin:0px; padding-top:10px; padding-bottom:10px " >
+            <a href="index.html" class="w3-bar-item w3-button">Home</a>
+            <a href="blog-page.html" class="w3-bar-item w3-button">Blog</a>
+            <a href="Portfolio-final.html" class="w3-bar-item w3-button">Portfolio</a>
+            <a href="#active" class="w3-bar-item w3-button">Contact</a>
+            <a href="register.php" class="w3-bar-item w3-button">Join Us</a>
+            <a href="members-details.html" class="w3-bar-item w3-button">Founders</a>
+            <a href="logout.php" class="w3-bar-item w3-button">Logout</a>
+
+            <!-- Add font awesome icons -->
+            <a style="float:right; font-size: 30px" href="https://www.youtube.com/channel/UC9g1tQMPK8UV20ihXq2bqvw" class="fa fa-youtube"></a> 
+            <a  style="float:right; font-size: 30px" href="https://www.instagram.com/darshanrao526/" class="fa fa-instagram"></a>
+            <a style="float:right; font-size: 30px" href="https://twitter.com/Darshan57925998" class="fa fa-twitter"></a>
+            <a style="float:right; font-size: 30px" href="https://www.facebook.com/pradeep.bhagat.182" class="fa fa-facebook"></a>
+            <a style="float:right; font-size: 30px" href="https://www.linkedin.com/in/darshan-yadav-9496b0201/" class="fa fa-linkedin"></a>
+            <a style="float:right; font-size: 30px" href="https://github.com/Darshan-star" class="fa fa-github"></a>
+            <a style="float:right; font-size: 30px" href="https://www.facebook.com/Kunalroy.sm034" class="fa fa-facebook"></a>
+            
+        </div>
+  
+
+
+<!----------------------- Contact Form ------------------------->
+
+    <div class="container">
+        <div style="text-align:center">
+            <h2>Contact Us</h2>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="contact-us.png" style="width:100%">
+            </div>
+            <div class="column">
+                <form action="contact.php" method="POST">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" placeholder="Please mention your country" required>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email" required>
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                    <input type="submit" value="Submit" name="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
